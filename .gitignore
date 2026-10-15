@@ -1,0 +1,22 @@
+# Python environment and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# MLflow local tracking database
+mlflow.db
+mlflow.db-shm
+mlflow.db-wal
+mlruns/
+
+# Temporary files
+.DS_Store
+*.log
+
+# Secrets
+.env
+.streamlit/secrets.toml
+# Local build and dataset artifacts
+.dist/
+data/

@@ -1,0 +1,62 @@
+{
+  "project": "Student Performance Prediction",
+  "dataset": "UCI Student Performance (student-mat.csv)",
+  "target": "G3",
+  "features": [
+    "studytime",
+    "failures",
+    "absences",
+    "G1",
+    "G2",
+    "schoolsup",
+    "famsup",
+    "internet"
+  ],
+  "numeric_features": [
+    "studytime",
+    "failures",
+    "absences",
+    "G1",
+    "G2"
+  ],
+  "categorical_features": [
+    "schoolsup",
+    "famsup",
+    "internet"
+  ],
+  "selected_model": "GradientBoostingRegressor",
+  "selection_metric": "lowest RMSE on held-out test set",
+  "best_test_metrics": {
+    "model": "GradientBoostingRegressor",
+    "rmse": 1.4984728369992855,
+    "mae": 0.9125791574917904,
+    "r2": 0.8512571271919886,
+    "run_id": "11a01019df774b5ca1cce9255802fb5f"
+  },
+  "all_test_results": [
+    {
+      "model": "GradientBoostingRegressor",
+      "rmse": 1.4984728369992855,
+      "mae": 0.9125791574917904,
+      "r2": 0.8512571271919886,
+      "run_id": "11a01019df774b5ca1cce9255802fb5f"
+    },
+    {
+      "model": "ExtraTreesRegressor",
+      "rmse": 1.5926029367705334,
+      "mae": 1.0010785985525985,
+      "r2": 0.8319829172199118,
+      "run_id": "0419ca211fc04c4ebddb7a8b02453a11"
+    },
+    {
+      "model": "RandomForestRegressor",
+      "rmse": 1.6130869488266923,
+      "mae": 1.0418382685128953,
+      "r2": 0.827633060567637,
+      "run_id": "dfa0411eda6f459e94dee7858d388da9"
+    }
+  ],
+  "dataset_rows": 390,
+  "train_test_split": "80/20, random_state=42",
+  "grade_scale": "0 to 20"
+}
